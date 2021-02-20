@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="myapp.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- User scalable=0 prevents double tap but is accessibility problem -->
+        <link rel="apple-touch-icon" sizes="128x128" href="icon128.png">
+        <link rel="icon" sizes="192x192" href="icon128.png">
+    </head>
+    <!-- Icon made by www.freepik.com" - replace, buy or attribute if distributing -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <body>
+
+        <header> <h1>Currency Converter</h1> </header>
+
+        <main>
+            <input type = "text" id = "text" readonly><label for = "text" id = "textCurrency"></label>
+            <div id = "options">
+                <form>
+                    <label for = "inCurrency">FROM<br></label>
+                    <div class = "custom-select">
+                        <select id ="inCurrency" name = "inCurrency">
+                            <option value = "gbp">GBP</option>
+                            <option value = "eur" data-thumbnail>EUR</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <label for = "outCurrency">TO<br></label>
+                    <div class = "custom-select">
+                        <select id = "outCurrency" name = "outCurrency">
+                            <option value = "eur">EUR</option>
+                            <option value = "gbp">GBP</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <label for = "fee">Bank Fee<br></label>
+                    <div class = "custom-select">
+                        <select id = "fee" name = "fee">
+                            <option value = "0">0%</option>
+                            <option value = "0.02">2%</option>
+                            <option value = "0.04">4%</option>
+                            <option value = "0.06">6%</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div id = "inputOutput">
+                <table id="pad">
+
+                    <tr>
+                        <td><button id = "7">7</button></td>
+                        <td><button id = "8">8</button></td>
+                        <td><button id = "9">9</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id = "4">4</button></td>
+                        <td><button id = "5">5</button></td>
+                        <td><button id = "6">6</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id = "1">1</button></td>
+                        <td><button id = "2">2</button></td>
+                        <td><button id = "3">3</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id = "clear">C</button></td>
+                        <td><button id = "0">0</button></td>
+                        <td><button id = "=">=</button></td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </main>
+
+        <footer>
+            Thomas Hinds 2021
+        </footer>
+
+        <script src="myapp.js"></script>
+
+    </body>
+</html>

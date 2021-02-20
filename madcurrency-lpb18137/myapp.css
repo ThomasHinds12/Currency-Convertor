@@ -1,0 +1,105 @@
+*{
+    -webkit-user-select: none; user-select: none;
+}
+body {
+    margin:0; padding:0;
+    font-family: Helvetica, sans-serif;
+    background-color: #27323a;
+    text-align: center;
+}
+header,footer {
+    margin: 0; padding: .5rem;
+    background-color: #29a19c; color: white;
+    text-align: center;
+}
+header{     height: 2rem; }
+footer{     height: 1rem; }
+header > h1 {
+    margin: 0; padding: 0;
+    font-size: 2rem;  line-height: 2rem;
+}
+
+main{
+    margin: 0 1rem 0 0;
+    padding: 1.1rem 0.8rem 0.8rem;
+    height: calc(100vh - 6.9rem);
+    background-color: #27323a; color: black;
+}
+
+@media only screen and (orientation: landscape) {
+    footer {
+        display: none;
+    }
+}
+
+#options {
+    padding-top: 2rem;
+    text-align: center;
+    width: 25%;
+    position: absolute;
+    background-color:  #27323a;
+    color: white;
+    font-size: 1.2rem;
+}
+
+select {
+    padding: 0.5rem;
+    width: 90%;
+    text-align: center;
+    background-color: #435055;
+    border: 0;
+    color: white;
+    margin-top: 0.3rem;
+    margin-bottom: .5rem;
+    border-radius: 0.2rem;
+}
+
+#inputOutput {
+    width:70%;
+    position: absolute;
+    right:0;
+    background-color: #27323a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0;
+}
+
+#pad {
+     font-size:2.5rem;
+     padding:0.8rem;
+     width:100%;
+     margin:auto;
+ }
+
+button {
+    padding: 1rem 1.4rem;
+    background-color: #435055;
+    color: white;
+    border: 0;
+    border-radius: 20rem;
+    margin-bottom: 0.2rem;
+}
+
+#clear {
+    padding: 1rem 1.2rem;
+}
+
+#textCurrency {
+    font-size: 1.2rem;
+    color: #a3f7bf;
+    position:absolute;
+    right:1.3rem;
+    top: 6.6rem;
+}
+
+#text {
+    padding: .5rem .5rem 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    width: 100%;
+    background-color: #435055;
+    border: 0px;
+    color: white;
+    margin-right: 1rem;
+    border-radius: .5rem;
+}
